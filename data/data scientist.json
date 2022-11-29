@@ -1,0 +1,104 @@
+{
+  "first_name": "Alexander",
+  "last_name": "Chichigin",
+
+  "contact_info": {
+    "phone": { "value": "111-222-3333" },
+    "email": { "value": "sad.ronin@gmail.com" },
+    "github": { "value": "https://github.com/gabriel-fallen/" },
+    "linkedin": { "value": "https://www.linkedin.com/in/alexander-chichigin-1834a938/" },
+    "youtube": { "value": "https://www.youtube.com/@alexchichigin" }
+  },
+
+  "about": {
+    "position": "Data Scientist",
+    "description": "Well-versed in the technical side of things thanks to extensive Software Engineering experience. Enthusiastic about Statistical Inference, Machine Learning and Visualizations."
+  },
+
+  "projects": {
+    "items": [
+      {
+        "name": { "href": "https://huggingface.co/spaces/gabriel-fallen/sickofmyjob", "title": "I'm sick of my job" },
+        "text": "A demo end-to-end data-driven Web application using Orange, Python, Flask, JavaScript and HTML5. Showcases Machine Learning, cross-validation, model selection, loading and use in a Web app. Full source code on <a href=\"https://github.com/gabriel-fallen/attrition\">Github</a>."
+      },
+      {
+        "name": { "href": "https://combineclothes.com", "title": "MixDress"},
+        "text": "A Web standards-based Single Page/Mobile app suggesting outfits to combine out of clothes you have."
+      }
+    ]
+  },
+
+  "certifications": {
+    "items": [
+      {
+        "title": "Introduction to Data Science",
+        "provider": "Udacity",
+        "year": "2016"
+      },
+      {
+        "title": "Teacher Excellence Program",
+        "provider": "iCarnegie",
+        "year": "2014"
+      },
+      {
+        "title": "Andrew Ng's ML Class",
+        "provider": "Stanford",
+        "year": "2011"
+      },
+      {
+        "title": "AI Class",
+        "provider": "Stanford",
+        "year": "2011"
+      }
+    ]
+  },
+
+  "skills": {
+    "items": [
+      {
+        "name": "Machine Learning",
+        "l1": "checked",
+        "l2": "checked",
+        "l3": "checked",
+        "l4": "checked",
+        "l5": ""
+      },
+      {
+        "name": "Julia",
+        "l1": "checked",
+        "l2": "checked",
+        "l3": "checked",
+        "l4": "",
+        "l5": ""
+      },
+      {
+        "name": "Python",
+        "l1": "checked",
+        "l2": "checked",
+        "l3": "checked",
+        "l4": "",
+        "l5": ""
+      },
+      {
+        "name": "JavaScript",
+        "l1": "checked",
+        "l2": "checked",
+        "l3": "checked",
+        "l4": "checked",
+        "l5": ""
+      },
+      {
+        "name": "Git",
+        "l1": "checked",
+        "l2": "checked",
+        "l3": "checked",
+        "l4": "checked",
+        "l5": ""
+      }
+    ]
+  },
+
+  "interests": {
+    "text": "Mathematics, Statistics, Machine Learning, Programming Languages, Cycling"
+  }
+}

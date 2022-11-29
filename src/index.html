@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>{{first_name}} {{last_name}} - Resume</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="full-name">
+      <span class="first-name">{{first_name}}</span>
+      <span class="last-name">{{last_name}}</span>
+    </div>
+    {{#contact_info}}
+    <div class="contact-info">
+      {{#phone}}
+      <div class="phone">Phone: </div>
+      <div class="phone-val">{{value}}</div>
+      {{/phone}}
+      {{#email}}
+      <br />
+      <div class="email">Email: </div>
+      <div class="email-val">
+        <a href="mailto:{{value}}">{{value}}</a>
+      </div>
+      {{/email}}
+      {{#linkedin}}
+      <br />
+      <div class="linkedin">LinkedIn: </div>
+      <div class="linkedin-val">
+        <a href="{{value}}">{{value}}</a>
+      </div>
+      {{/linkedin}}
+      {{#github}}
+      <br />
+      <div class="github">Github: </div>
+      <div class="github-val">
+        <a href="{{value}}">{{value}}</a>
+      </div>
+      {{/github}}
+      {{#youtube}}
+      <br />
+      <div class="youtube">YouTube: </div>
+      <div class="youtube-val">
+        <a href="{{value}}">{{value}}</a>
+      </div>
+      {{/youtube}}
+    </div>
+    {{/contact_info}}
+
+    {{#about}}
+    <div class="about">
+      <span class="position">{{position}}</span>
+      <span class="desc">{{{description}}}</span>
+    </div>
+    {{/about}}
+  </div>
+  <div class="details">
+    <div class="section">
+      <div class="section__title">Experience</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Calejo</div>
+            <div class="addr">Sweden</div>
+            <div class="duration">Mar 2022 - Oct 2022</div>
+          </div>
+          <div class="right">
+            <div class="name">ML Engineer</div>
+            <div class="desc">
+              <ul>
+                <li>Made interactive visualizations to answer "what if?" questions based on simulation</li>
+                <li>Implemented Continuous Integration pipeline on top of GitHub Actions with caching; improved CI performance by 25%</li>
+                <li>Documented code with comments, architecture with Architecture Decision Records, and models with LaTeX math</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">TU Delft</div>
+            <div class="addr">Delft, Netherlands</div>
+            <div class="duration">Jan 2021 - Dec 2021</div>
+          </div>
+          <div class="right">
+            <div class="name">PhD-student/Software Developer</div>
+            <div class="desc">
+              <ul>
+                <li>Development of <a href="https://weblab.tudelft.nl/">WebLab</a> and <a href="https://conf.researchr.org/">Researchr</a>
+(Using WebDSL, Java, JavaScript, Docker, Docker Compose)</li>
+                <li>Took graduate courses on scientific writing and communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Positive Technologies</div>
+            <div class="addr">Moscow, Russia</div>
+            <div class="duration">Oct 2018 - Dec 2020</div>
+          </div>
+          <div class="right">
+            <div class="name">Software Developer</div>
+            <div class="desc">
+              <ul>
+                <li>Development of a Static Application Security Testing system</li>
+                <li>Implemented TypeScript language support (ANTLR grammar, parse tree conversion)</li>
+                <li>Trained and integrated ML.NET model into existing ANTLR-based SQL dialect detection tool; improved accuracy by 15%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Typeable.io</div>
+            <div class="addr">Moscow, Russia</div>
+            <div class="duration">Apr 2017 - May 2018</div>
+          </div>
+          <div class="right">
+            <div class="name">Haskell Developer</div>
+            <div class="desc">
+              <ul>
+                <li>Web application back-end development with Haskell, Servant, Yesod, PostgreSimple, RabbitMQ, Redis</li>
+                <li>Implemented a Web front-end for a back-office using JavaScript, React.js, Immutable.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Innopolis University</div>
+            <div class="addr">Innopolis, Russia</div>
+            <div class="duration">Oct 2014 - Dec 2016</div>
+          </div>
+          <div class="right">
+            <div class="name">Researcher</div>
+            <div class="desc">
+              <ul>
+                <li>
+                  BioDynaMo joint project with Newcastle University, CERN openlab and Kazan Federal Univerity
+                  <ul>
+                    <li>Lead an investigation into appropriate computing platform</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Kazan Federal University</div>
+            <div class="addr">Kazan, Russia</div>
+            <div class="duration">Feb 2014 - Jan 2017</div>
+          </div>
+          <div class="right">
+            <div class="name">Researcher</div>
+            <div class="desc">
+              <ul>
+                <li>Lead a project on mobile users segmentation according to their interests (inferring from meta-data) (Python, Pandas, NumPy, Jupyter Notebook)</li>
+                <li>Took part in international projects on Artificial Emotions and Machine Consciousness</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Various</div>
+            <div class="addr">Kazan, Russia</div>
+            <div class="duration">2011 - 2013</div>
+          </div>
+          <div class="right">
+            <div class="name">Software Developer</div>
+            <div class="desc">
+              <ul>
+                <li>Web application development in Java, Clojure, Python</li>
+                <li>Some Embedded development in C/C++</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Irkutsk State University</div>
+            <div class="addr">Irkutsk, Russia</div>
+            <div class="duration">2003 - 2008</div>
+          </div>
+          <div class="right">
+            <div class="name">Specialist Degree in Physics, summa cum laude</div>
+            <div class="desc">Thesis: Computational model of a recombination process in the Sun's photosphere</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#projects}}
+    <div class="section">
+      <div class="section__title">Projects</div>
+      <div class="section__list">
+        {{#items}}
+        <div class="section__list-item">
+          <div class="name">
+            <a href="{{name.href}}">{{name.title}}</a>
+          </div>
+          <div class="text">{{{text}}}</div>
+        </div>
+        {{/items}}
+      </div>
+    </div>
+    {{/projects}}
+    {{#certifications}}
+    <div class="section">
+      <div class="section__title">Certifications</div>
+      <div class="section__list">
+        {{#items}}
+        <div class="section__list-item">
+          <div class="left">
+            <div class="duration">{{year}}</div>
+          </div>
+          <div class="right">
+            <div class="name">{{title}}</div>
+            <div class="desc">{{provider}}</div>
+          </div>
+        </div>
+        {{/items}}
+      </div>
+    </div>
+    {{/certifications}}
+    {{#skills}}
+    <div class="section">
+      <div class="section__title">Skills</div>
+      <div class="skills">
+        {{#items}}
+        <div class="skills__item">
+          <div class="left">
+            <div class="name">{{name}}</div>
+          </div>
+          <div class="right">
+            <input id="ck1" type="checkbox" {{l1}} />
+            <label for="ck1"></label>
+            <input id="ck2" type="checkbox" {{l2}} />
+            <label for="ck2"></label>
+            <input id="ck3" type="checkbox" {{l3}} />
+            <label for="ck3"></label>
+            <input id="ck4" type="checkbox" {{l4}} />
+            <label for="ck4"></label>
+            <input id="ck5" type="checkbox" {{l5}} />
+            <label for="ck5"></label>
+          </div>
+        </div>
+        {{/items}}
+      </div>
+    </div>
+    {{/skills}}
+    {{#interests}}
+    <div class="section">
+      <div class="section__title">
+        Interests
+      </div>
+      <div class="section__list">
+        <div class="section__list-item">
+          {{text}}
+        </div>
+      </div>
+    </div>
+    {{/interests}}
+  </div>
+</div>
+</div>
+</body>
+</html>
