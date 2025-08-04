@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   color: #222;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 22px;
   padding-bottom: 50px;
 }
 
@@ -81,7 +81,7 @@ body {
   line-height: 20px;
 }
 .details .section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .details .section:last-of-type {
   margin-bottom: 0px;
@@ -94,7 +94,7 @@ body {
   text-transform: uppercase;
 }
 .details .section__list-item {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .details .section__list-item:last-of-type {
   margin-bottom: 0;
